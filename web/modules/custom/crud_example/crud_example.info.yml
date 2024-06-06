@@ -1,0 +1,7 @@
+name: 'CRUD Example'
+type: module
+description: 'A simple example module to perform CRUD operations.'
+core_version_requirement: ^10
+package: Custom
+dependencies:
+  - drupal:node

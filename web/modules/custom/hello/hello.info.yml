@@ -1,0 +1,5 @@
+name: Hello
+type: module
+package: Custom
+description: Hello demo module.
+core_version_requirement: ^9.2 || ^10

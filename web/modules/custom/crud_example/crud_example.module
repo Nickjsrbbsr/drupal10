@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_theme().
+ */
+function crud_example_theme() {
+  return [
+    'crud_example_list' => [
+      'variables' => ['items' => NULL],
+      'template' => 'crud-example-list',
+    ],
+  ];
+}

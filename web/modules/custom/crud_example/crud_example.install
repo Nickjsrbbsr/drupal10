@@ -1,0 +1,31 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ */
+function crud_example_schema() {
+  $schema['crud_example'] = [
+    'description' => 'Table to store CRUD example items.',
+    'fields' => [
+      'id' => [
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key',
+      ],
+      'name' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'description' => 'Name of the item',
+      ],
+      'description' => [
+        'type' => 'text',
+        'not null' => TRUE,
+        'description' => 'Description of the item',
+      ],
+    ],
+    'primary key' => ['id'],
+  ];
+
+  return $schema;
+}

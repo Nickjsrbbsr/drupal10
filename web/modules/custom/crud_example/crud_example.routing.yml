@@ -1,0 +1,15 @@
+crud_example.add_form:
+  path: '/crud-example/add'
+  defaults:
+    _form: '\Drupal\crud_example\Form\AddForm'
+    _title: 'Add Item'
+  requirements:
+    _permission: 'access content'
+
+crud_example.list:
+  path: '/crud-example/list'
+  defaults:
+    _controller: '\Drupal\crud_example\Controller\CrudExampleController::listItems'
+    _title: 'List Items'
+  requirements:
+    _permission: 'access content'
